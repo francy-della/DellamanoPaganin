@@ -85,7 +85,7 @@ public class ClientTCP {
                     client_socket.close();
                     System.exit(0);
                     break;
-                default:
+                default://scelta non valida
                     System.out.println(in.readUTF());
             }
         }
