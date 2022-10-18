@@ -4,6 +4,8 @@
  */
 package clientes20;
 
+import java.io.IOException;
+
 /**
  *
  * @author FRANCESCADELLAMANO
@@ -14,7 +16,12 @@ public class ClientEs20 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        try {
+            ClientTCP client = new ClientTCP("127.0.0.1", 18);
+            client.avviaClient();
+        } catch (IOException ex) {
+            System.err.println("Errore generico di comunicazione!");
+        }
     }
     
 }
