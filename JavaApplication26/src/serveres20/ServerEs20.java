@@ -16,6 +16,7 @@ public class ServerEs20 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
         try {
             ServerTCP server = new ServerTCP(18);
             Thread t = new Thread(server);
